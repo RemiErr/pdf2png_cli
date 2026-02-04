@@ -64,24 +64,17 @@ uv --version
 
 ---
 
-## 初始化專案（第一次使用）
+## 同步環境設定
 
 在專案根目錄執行：
 
 ```bash
-uv init
+uv sync
 ```
 
-（可選）指定 Python 版本：
+該指令會自動安裝相依套件並同步環境設定，若環境未被正確安裝可嘗試手動安裝。
 
-```bash
-uv python install 3.11
-uv python pin 3.11
-```
-
----
-
-## 安裝相依套件
+### 手動安裝相依套件
 
 ```bash
 uv add pymupdf pillow reportlab pytest
